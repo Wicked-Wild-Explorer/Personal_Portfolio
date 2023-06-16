@@ -249,3 +249,7 @@ footer{
     align-items: center; 
     }
   }
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+  }
