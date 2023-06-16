@@ -252,4 +252,5 @@ footer{
 @media (max-width: 768px) {
   .contact-links {
     flex-direction: row;
+      align-items: center; 
   }
