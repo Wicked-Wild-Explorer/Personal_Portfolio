@@ -182,11 +182,7 @@ section{
     color: var(--neutral)
 }
 
-#contact{ 
-    background-color: var(--neutral);
-    color: var(--base-100)
 
-}
 #contact h1{ 
     margin-top: 300px; 
 }
@@ -194,31 +190,31 @@ section{
 #contact .coffee-question{ 
  color: var(--base-100);
  font-size: 25px;
- font-style: italic;;
+ font-style: italic;
+ color: black;
 } 
 
-#contact .social-medias{ 
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    justify-content: space-around;
-    margin: 50vh;
-    margin-top: 30px; 
- 
 
-}
-#contact .social-media{ 
+#contact .social-medias{ 
 text-decoration: none; 
 color: black;
 transition: transform 0.2s ease-in;
 display: flex;
 margin: 20px;
 font-size: 22px;
+flex-direction: column;
+
+
 align-items: center;
 }
+#contact .social-medias a { 
+    text-decoration: none; 
+    color: black;
+    }
 
 #contact .social-media:hover{ 
     transform: translateY(10px);
+    text-decoration: underline;
 }
 
 footer{ 
@@ -246,17 +242,28 @@ footer{
     #projects .project-tile {
       height: 600px;
       width: 100%;
-    align-items: center; 
     }
   }
-@media (max-width: 768px) {
-  .contact-links {
-    flex-direction: row;
-      align-items: center; 
+  @media (max-width: 480px) {
+    .contact-links {
+     
+        display: flex;
+      justify-content: center;
+    }
   }
-@media (max-width: 480px) {
-  .contact-links {
-    display: flex;
-    justify-content: center;
+  
+  @media only screen and (max-width: 767px) {
+    #projects .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      max-height: 100vh;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+      padding: 10px;
+      grid-gap: 1rem;
+      max-width: 1280px;
+      width: 100%;
+    }
   }
-}
