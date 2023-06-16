@@ -1,0 +1,241 @@
+:root { 
+    --neutral: linear-gradient(292deg, #640000 0%, #d19600 100%);
+    --base-100: #e4e4d8;
+    --neutral-focus: #ae6d05;
+    --primary: #e4e4d8;
+    --secondary: linear-gradient(292deg, hwb(22 16% 27%) 0%, #ae6d05 50%, #d19600 100%);
+
+    --highlight: #792C00;
+    --shadow: #008EFD;
+}
+
+*{
+    margin: 0; 
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    background: var(--neutral);
+
+
+} 
+h1,h2,h3,h4,h5,h6{ 
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1{ 
+    font-size: 60px; 
+    padding: 40px;
+}
+
+#nav-bar{ 
+ display: flex; 
+   justify-content: center;
+   position: fixed; 
+   top: 0; 
+   width: 100%;
+   background: var(--secondary);
+   padding: 20px 0; 
+   font-size: 20px; 
+   border-bottom: 1px solid var(--neutral-focus);
+   z-index: 3; /* Add z-index to keep the header above other elements */
+
+}
+.nav-links{ 
+    display: flex; 
+    list-style:none; 
+}
+
+.nav-links a{ 
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--base-100);
+    
+}
+
+.nav-links a:hover{ 
+    text-decoration: underline; 
+}
+
+
+section{
+    min-height: 100vh; 
+    padding: 70px 0; 
+    position: relative; 
+}
+
+#welcome-section{ 
+    background-color: var(--neutral);
+    color: var(--base-100); 
+    display: flex; 
+    flex-direction: column;
+}
+
+#welcome-section h1{
+    margin-top: 30vh; 
+
+}
+#welcome-section p{ 
+    color: var(--accent);
+    font-size:25px;
+    margin: 25px 0 ; 
+   font-style: italic;
+}
+
+#projects{ 
+    background-color: var(--neutral);
+    width: fit-content;
+    margin: auto; 
+}
+
+#projects h1{ 
+    border-bottom: 5px solid var(--neutral);
+    width: fit-content;
+    margin: auto; 
+}
+#projects .projects {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px; 
+    padding: 10px; 
+    grid-gap: 1rem;
+    place-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; 
+    margin-bottom: 6rem;
+}
+
+
+
+#projects .project-tile a{ 
+    height: 325px; 
+    text-decoration: none;
+    width: 99%; 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 40px;
+    box-shadow: 8px 8px 20px 10px rgba(1, 1, 1, 0.2);
+    margin-bottom: 50rem; /* Adjust margin as needed */
+}
+
+
+#projects .project-tile p{ 
+    font-size: 18px;
+    margin-top: auto;
+    padding: 10px;
+    background-color: var(--highlight);
+    color: var(--primary);
+    text-align: auto;
+    box-shadow: 8px 8px 20px 10px rgba(1, 1, 1, 0.2);
+
+    
+}
+
+#projects .project-tile p span {
+    display: inline;
+    opacity: 0%;
+    padding: 0 5px;
+     
+}
+#projects .project-tile:hover span {
+    opacity:100%;
+    color: var(--neutral-focus);
+    transition: opacity 0.25s ease-in; ;
+     
+}
+
+#projects .project-tile img{ 
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    
+}
+
+.show-all{ 
+    text-decoration: none;
+    width: max-content;
+    display: inline;
+    align-items: center;
+    margin: auto;
+    padding: 15px 15px; 
+    font-size: 24px;
+    background-color: var(--neutral);
+    color: var(--neutral-focus);
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in;
+    transition: color 0.2s ease-in-out;
+
+}
+.show-all i {
+    margin-left: 15px; /* Adjust the value to increase or decrease the space */
+  }
+
+.show-all:hover{ 
+    background-color: var(--neutral-focus);
+    color: var(--neutral)
+}
+
+#contact{ 
+    background-color: var(--neutral);
+    color: var(--base-100)
+
+}
+#contact h1{ 
+    margin-top: 300px; 
+}
+
+#contact .coffee-question{ 
+ color: var(--base-100);
+ font-size: 25px;
+ font-style: italic;;
+} 
+
+#contact .social-medias{ 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 50vh;
+    margin-top: 30px; 
+ 
+
+}
+#contact .social-media{ 
+text-decoration: none; 
+color: black;
+transition: transform 0.2s ease-in;
+display: flex;
+margin: 20px;
+font-size: 22px;
+align-items: center;
+}
+
+#contact .social-media:hover{ 
+    transform: translateY(10px);
+}
+
+footer{ 
+    border-top: 3px solid  var(--primary);
+    color: var(--neutral-focus);
+    font-size: 25px;
+    padding: 30px;
+
+}
+
+@media only screen and (width < 700px){ 
+    h1{ 
+        font-size: 50px;
+    }
+    #projects .project-tile{ 
+        height: 600px; 
+        width: 100%; 
+
+    }
+}
