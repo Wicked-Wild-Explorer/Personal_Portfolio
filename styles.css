@@ -202,19 +202,23 @@ transition: transform 0.2s ease-in;
 display: flex;
 margin: 20px;
 font-size: 22px;
-flex-direction: column;
-
-
+justify-content: center;
+flex-direction: row;
+gap: 20px;
+padding: 5%;
 align-items: center;
 }
+
 #contact .social-medias a { 
     text-decoration: none; 
     color: black;
+
     }
 
 #contact .social-media:hover{ 
     transform: translateY(10px);
-    text-decoration: underline;
+    text-decoration:none;
+    
 }
 
 footer{ 
@@ -225,7 +229,7 @@ footer{
 
 }
 
-@media only screen and (width < 700px){ 
+@media only screen and (max-width: 700px){ 
     h1{ 
         font-size: 50px;
     }
@@ -240,16 +244,8 @@ footer{
       font-size: 50px;
     }
     #projects .project-tile {
-      height: 600px;
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .contact-links {
-     
-        display: flex;
-      justify-content: center;
+      height: 400px;
+      width: 80%;
     }
   }
   
@@ -264,7 +260,37 @@ footer{
       margin-bottom: 6rem;
       padding: 10px;
       grid-gap: 1rem;
-      max-width: 1280px;
+      max-width: 1200px;
       width: 100%;
     }
   }
+  @media only screen and (max-width: 480px) {
+    #projects .project-tile {
+      height: auto;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    #projects .project-tile p {
+        font-size: 16px;
+        overflow: auto;
+        white-space: normal;
+    }
+  
+    #projects .project-tile p span {
+        opacity: 100%;
+        color: var(--primary);
+        display: inline;
+        padding: 0 5px;
+    }
+    #contact .social-medias{ 
+        text-decoration: none; 
+        color: black;
+        transition: transform 0.2s ease-in;
+        display: flex;
+        margin: 20px;
+        font-size: 22px;
+flex-direction: column;}
+    }
+  
+  
