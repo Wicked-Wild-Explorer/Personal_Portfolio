@@ -294,14 +294,14 @@ flex-direction: column;}
     }
 
     @media only screen and (max-width: 480px) {
-    #nav-bar{ 
+    #navbar{ 
         display: flex; 
           justify-content: center;
           position: fixed; 
           top: 0; 
           width: 100%;
           background: var(--secondary);
-          padding: 10px 0; 
+          padding: 20px 0; 
           font-size: 20px; 
           border-bottom: 1px solid var(--neutral-focus);
     } 
