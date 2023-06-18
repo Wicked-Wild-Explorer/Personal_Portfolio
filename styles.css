@@ -35,7 +35,7 @@ h1{
  display: flex; 
    justify-content: center;
    position: fixed; 
-   top: 0; 
+   top: 0;
    width: 100%;
    background: var(--secondary);
    padding: 20px 0; 
@@ -250,20 +250,20 @@ footer{
   }
   
   @media only screen and (max-width: 767px) {
-  #projects .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    max-height: 100vh;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-    padding: 10px;
-    grid-gap: 0.5rem; /* Adjust the grid gap as needed */
-    max-width: 90%; /* Adjust the max-width as needed */
-    width: 100%;
+    #projects .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      max-height: 100vh;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+      padding: 10px;
+      grid-gap: 1rem;
+      max-width: 1200px;
+      width: 100%;
+    }
   }
-}
   @media only screen and (max-width: 480px) {
     #projects .project-tile {
       height: auto;
@@ -292,19 +292,18 @@ footer{
         font-size: 22px;
 flex-direction: column;}
     }
-@media only screen and (max-width: 480px) {
-  #nav-bar {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 60%;
-    transform: translateX(-50%);
-    width: 100%;
-    background: var(--secondary);
-    padding: 20px 0;
-    font-size: 20px;
-    border-bottom: 1px solid var(--neutral-focus);
-  }
-}
 
+    @media only screen and (max-width: 300%) {
+        #nav-bar {
+          display: flex;
+          justify-content: center;
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          padding: 20px 0;
+          font-size: 20px;
+          border-bottom: 1px solid var(--neutral-focus);
+        }
+      }
