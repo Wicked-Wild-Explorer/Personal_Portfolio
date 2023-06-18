@@ -298,7 +298,7 @@ flex-direction: column;}
     justify-content: center;
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     width: 100%;
     background: var(--secondary);
