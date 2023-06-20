@@ -290,7 +290,7 @@ footer{
         transition: transform 0.2s ease-in;
         display: flex;
         margin: 20px;
-        font-size: 22px;
+        font-size: 10px;
 flex-direction: column;}
     }
 
@@ -304,14 +304,13 @@ flex-direction: column;}
           transform: translateX(-50%);
           width: 100%;
           padding: 20px 0;
-          font-size: 20px;
           border-bottom: 1px solid var(--neutral-focus);
         }
 
         #nav-links a{ 
             text-decoration: none;
             padding: 10px;
-            font-size: 19px; 
+
             margin: 25px 0 ; 
         
             color: var(--base-100); 
