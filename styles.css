@@ -46,19 +46,17 @@ h1{
 }
 .nav-links{ 
     display: flex; 
-
     list-style:none; 
 
 }
 
 .nav-links a{ 
     text-decoration: none;
-    padding: 0 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size:25px;
+    margin: 25px 0 ; 
     width: 100%;
-
-     color: var(--base-100);
-     
+    color: var(--base-100);     
     }
 
 .nav-links a:hover{ 
@@ -81,7 +79,6 @@ section{
 
 #welcome-section h1{
     margin-top: 30vh; 
-,
 }
 #welcome-section p{ 
     color: var(--accent);
