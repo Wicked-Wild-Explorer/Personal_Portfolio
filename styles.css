@@ -32,13 +32,12 @@ h1{
 }
 
 #nav-bar{ 
- display: flex; 
+ display: flex;
    justify-content: center;
-   position: fixed; 
+   position: fixed;  
    top: 0;
-   width: 100%;
-   background: var(--secondary);
-   padding: 20px 0; 
+   width: 90%;
+    background: var(--secondary);
    font-size: 20px; 
    border-bottom: 1px solid var(--neutral-focus);
    z-index: 3; /* Add z-index to keep the header above other elements */
@@ -46,17 +45,19 @@ h1{
 }
 .nav-links{ 
     display: flex; 
+
     list-style:none; 
-    align-items: center;
+
 }
 
 .nav-links a{ 
     text-decoration: none;
-    padding: 0 10px;
-    align-items: center; 
-    color: var(--base-100);
-    
-}
+    padding: 0 20px;
+    font-size: 30px;
+    text-align: center;
+     color: var(--base-100);
+     
+    }
 
 .nav-links a:hover{ 
     text-decoration: underline; 
@@ -78,7 +79,7 @@ section{
 
 #welcome-section h1{
     margin-top: 30vh; 
-
+,
 }
 #welcome-section p{ 
     color: var(--accent);
