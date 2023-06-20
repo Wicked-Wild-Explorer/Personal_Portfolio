@@ -311,7 +311,7 @@ flex-direction: column;}
         #nav-links a{ 
             text-decoration: none;
             padding: 10px;
-            font-size: 22px; 
+            font-size: 19px; 
             margin: 25px 0 ; 
         
             color: var(--base-100); 
